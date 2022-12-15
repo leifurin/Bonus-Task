@@ -1,0 +1,14 @@
+body{
+  background-image: url(8.jpg);
+  color: black;
+  background-size:800px;
+  font-size: 20px;
+  text-align: center;
+  font-family:monospace;
+}
+cont{
+  display: none;
+}
+.cont1{
+  display: unset;
+}

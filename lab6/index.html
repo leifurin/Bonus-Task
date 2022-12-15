@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>LW6</title>
+</head>
+
+<body>
+  <div class="btn" style="background-color:darkolivegreen;" onclick="add()">ADD CONTACT</div>
+    <div class="ms-5 d-flex justify-content-evenly" id="contacts1"> 
+      YOUR CONTACTS:
+    </div>
+</div>
+</body>
+
+<script>
+  function add(){
+      let data = prompt('ENTER NEW CONTACTS');
+      let div = document.createElement('div')
+      div.innerHTML=data
+      div.classList.add('contact')
+      document.getElementById('contacts1').appendChild(div)
+    }
+
+    window.addEventListener('scroll',(event)=>{
+      if($(window).scrollTop()>300){
+        document.getElementsByClassName('cont')[0].classList.add('cont1')
+      }
+      if(document.documentElement.scrollTop < 300){
+        document.getElementsByClassName('cont')[0].classList.remove('cont1')
+      }
+    })
+</script>
+</html>
