@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiister</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="onSubmit(event)" action="#" id="form" class="form">
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+            <div class="kaz">
+
+                <div>
+                    <div class="form-control">
+                        <label for="username">First Name</label>
+                        <input id="name" type="text" placeholder="First Name" name="name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Last Name</label>
+                        <input id="lastname" type="text" placeholder="Last Name" name="lastname" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Password</label>
+                        <input id="password" type="password" placeholder="Password" name="password" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="form-control">
+                        <label for="username">E-mail</label><br />
+                        <input id="email" type="email" required placeholder="username@mail.ru" name="email" />
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Enter your birthday:</label>
+                        <input type="date" id="bday" name="bday" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    </div>    
+                    <div class="form-control">
+                        <label for="username">Choose a picture:</label><br>
+                        <input type="file" id="file" name="file" accept="image/png, image/jpg, image/jpeg">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="form-control">
+                        <label for="username">Birth hour: </label>
+                        <input id="time" type="time" name="time" value="11:11" />
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Choose your favorite car: </label>
+                        <select name="cars" id="cars">
+                            <option value="">--Choose--</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Choose your Country: </label>
+                        <select name="country" id="country">
+                            <option value="">--Choose--</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Italy">Italy</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Choose your favorite color:</label>
+                        <input type="color" id="color" name="color" value="#e66465">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <textarea id="w3review" name="w3review" rows="4" cols="50" disabled>Hello world!</textarea>
+            </div>
+    
+            <button type="submit">Save</button>
+            <button type="button" onclick="checkOut()">Checkout my registered data</button>
+
+        </form>
+        <p class="already">Already have an account? <a href="login_form.html">login now</a></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
