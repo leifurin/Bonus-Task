@@ -1,0 +1,162 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 1.6;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 1500px;
+}
+
+::before
+::after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/adel.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 95px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 7;
+}
+
+.intro__subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color:white;
+    top: 100px;
+    text-transform: uppercase;
+    bottom: 100px;
+    left: 120px;
+    right: 120px;
+}
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.navi {
+    font-size: 14px;
+    text-transform:  uppercase;
+}
+
+.navi__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position:relative;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.navi__link:after {
+    content: "";
+    display: none;
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: bisque;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.navi__link:hover{
+    color: bisque;
+}
+
+.navi__link:hover:after{
+    display: block;
+}
+.portfolio{
+    display: flex;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    
+}
+.portfolio img{
+    margin-left: 100px;
+}
+.portfolio2{
+    display: flex;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.portfolio2 img{
+    margin-left: 100px;
+}
+.portfolio3{
+    display: flex;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.portfolio3 img{
+    margin-left: 100px;
+}
+
+.blog{
+    margin-left: 100px;
+}
+.aboutme{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 50px;
+    margin-left: 50px;
+
+}
+.introduction{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    color:white;
+    font-size:33px;
+    margin-left: 20px;
+    margin-right: 50px;
+    justify-content: center;
+}
+.flex{
+    display:flex;
+}
